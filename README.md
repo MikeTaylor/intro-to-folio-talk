@@ -14,6 +14,7 @@ Friday 4 March 2022, 9am Eastern time.
   * Back-end module and Front-end modules work very differently
   * We will mostly be talking here about back-end modules
 * Ubiquitous use of JSON-based WSAPIs
+  * Okapi is itself controlled by a secured WSAPI
 * Modules provide and consume interfaces
 * Okapi moderates all access to modules
   * From inside (one module calling another)
@@ -41,7 +42,7 @@ Friday 4 March 2022, 9am Eastern time.
 * A program is a FOLIO module if it fulfils specific criteria:
   * Provides functionality via WSAPIs
   * Describes these WSAPIs in a module descriptor
-  * Supports a "health check" WSAPI
+  * Supports a "health check" WSAPI `/admin/health` responding 200 OK
 * Flexible tooling opens up lots of ways to do things
   * We tend to run modules inside containers but that is not required
   * UI development can be done against a public server
