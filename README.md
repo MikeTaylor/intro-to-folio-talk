@@ -7,23 +7,29 @@ Friday 4 March 2022, 9am Eastern time.
 
 ## Session 1: FOLIO Architecture (30 minutes)
 
+* **SLIDE: title, author, affiliation**
 * A FOLIO instance supports multiple tenants
   * Tenants are completely isolated from each other
   * From now on we will only consider what happens within a single tenant
 * FOLIO is made up of modules
   * Back-end module and Front-end modules work very differently
   * We will mostly be talking here about back-end modules
+  * **SLIDE: a FOLIO system with Stripes, Okapi, front-end and back-end modules**
 * Ubiquitous use of JSON-based WSAPIs
   * Okapi is itself controlled by a secured WSAPI
+  * **SLIDE: example JSON WSAPI request/response pair**
 * Modules provide and consume interfaces
+  * **SLIDE: example provide/require/optional network**
 * Okapi moderates all access to modules
   * From inside (one module calling another)
   * From outside (e.g. the UI)
   * From third-party clients, e.g. the Z39.50 server
+  * **SLIDE: FOLIO system (as before) with call topology added**
 * The permissions model
   * Atomic permissions
   * Permission sets
   * Trees of permission sets
+  * **SLIDE: DAG of permission sets**
   * Modules' use of permissions:
     * Required permissions
     * Desired permissions
@@ -47,6 +53,7 @@ Friday 4 March 2022, 9am Eastern time.
   * We tend to run modules inside containers but that is not required
   * UI development can be done against a public server
   * Back-end development using a reverse-tunnel out of a VM
+  * **SLIDE: diagram of reverse-tunnel VM approach**
   * John will say _much_ more about deployment
 * Most modules are in Java due to tooling support (RMB, Spring Way)
 * Quality control?
@@ -58,6 +65,7 @@ Friday 4 March 2022, 9am Eastern time.
 ### Developing UI modules within Stripes (15 minutes)
 
 * Unlike back-end modules, UI modules are compiled into a single bundle
+  * **SLIDE: screenshot of FOLIO highlighting the choice of apps**
 * The framework that builds and supports the bundle is Stripes
 * Stripes modules (= UI modules) are implemented as Node packages using React
   * There is no polyglot option as with back-end modules
