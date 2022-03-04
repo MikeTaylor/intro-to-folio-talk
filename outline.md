@@ -18,6 +18,7 @@ Friday 4 March 2022, 9am Eastern time.
 * Ubiquitous use of JSON-based WSAPIs
   * Okapi is itself controlled by a secured WSAPI
   * **SLIDE: example JSON WSAPI request/response pair**
+  * **LIVE DEMO: login and search for instances**
 * Modules provide and consume interfaces
   * **SLIDE: example provide/require/optional network**
 * Okapi moderates all access to modules
