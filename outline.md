@@ -29,7 +29,7 @@ Friday 4 March 2022, 9am Eastern time.
   * Atomic permissions
   * Permission sets
   * Trees of permission sets
-  * **SLIDE: DAG of permission sets**
+  * **MAYBE SLIDE: DAG of permission sets**
   * Modules' use of permissions:
     * Required permissions
     * Desired permissions
@@ -49,6 +49,7 @@ Friday 4 March 2022, 9am Eastern time.
   * Provides functionality via WSAPIs
   * Describes these WSAPIs in a module descriptor
   * Supports a "health check" WSAPI `/admin/health` responding 200 OK
+* This means an existing WSAPI may be a FOLIO module if you create a descriptor
 * Flexible tooling opens up lots of ways to do things
   * We tend to run modules inside containers but that is not required
   * UI development can be done against a public server
