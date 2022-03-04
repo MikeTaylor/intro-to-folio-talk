@@ -3,7 +3,7 @@ curl -w '\n' -D - \
   -H "X-Okapi-Tenant: diku" \
   https://folio-snapshot-okapi.dev.folio.org/search/instances?query=change
 
-login() {
+folioLogin() {
   curl -w '\n' -X POST -D - \
     -H "Content-type: application/json" \
     -H "X-Okapi-Tenant: $1" \
@@ -12,16 +12,16 @@ login() {
 }
 
 ## Unrecognised tenant
-login foobar diku_admin swordfish
+folioLogin foobar diku_admin swordfish
 
 # Unrecognised user
-login diku someguy swordfish
+folioLogin diku someguy swordfish
 
 # Bad password
-login diku diku_admin swordfish
+folioLogin diku diku_admin swordfish
 
 # Success
-login diku diku_admin admin
+folioLogin diku diku_admin admin
 
 # Find instances matching "change"
 curl -w '\n' -D - \
