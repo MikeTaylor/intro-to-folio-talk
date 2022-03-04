@@ -11,10 +11,11 @@ Friday 4 March 2022, 9am Eastern time.
 * A FOLIO instance supports multiple tenants
   * Tenants are completely isolated from each other
   * From now on we will only consider what happens within a single tenant
-* FOLIO is made up of modules
-  * Back-end module and Front-end modules work very differently
+* **SLIDE: a FOLIO system with Stripes, Okapi, front-end and back-end modules**
+* Framework aside, FOLIO is made up of modules
+  * Even authentication and authorization are handled by modules
+  * Back-end modules and Front-end modules work very differently
   * We will mostly be talking here about back-end modules
-  * **SLIDE: a FOLIO system with Stripes, Okapi, front-end and back-end modules**
 * Ubiquitous use of JSON-based WSAPIs
   * Okapi is itself controlled by a secured WSAPI
   * **SLIDE: example JSON WSAPI request/response pair**
