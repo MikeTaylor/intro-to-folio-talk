@@ -21,10 +21,10 @@ folioLogin diku someguy swordfish
 folioLogin diku diku_admin swordfish
 
 # Success
-folioLogin diku diku_admin admin
+folioLogin diku diku_admin swordfish2
 
 # Find instances matching "change"
 curl -w '\n' -D - \
   -H "X-Okapi-Tenant: diku" \
-  -H "X-Okapi-Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaWt1X2FkbWluIiwidHlwZSI6ImFjY2VzcyIsInVzZXJfaWQiOiJkMGQxNDJlZS0zODVkLTU4MDYtYjJhYi0wY2M0Nzg0MWQxM2QiLCJpYXQiOjE2NDYzOTU5ODksInRlbmFudCI6ImRpa3UifQ.3oAnAULxCfVQooUwr8AD2_SwPJKLD_4pzLA1xcjj8AA" \
+  -H "X-Okapi-Token: 12345" \
   https://folio-snapshot-okapi.dev.folio.org/search/instances?query=keyword=change\&limit=1
